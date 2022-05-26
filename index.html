@@ -7,11 +7,10 @@
     <title>E-learning</title>
 
     <!-- BS CSS  -->
+
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
+      href="./bootstrap-4.0.0-dist/css/bootstrap.min.css"
     />
 
     <!-- FONT AWESOME  -->
@@ -39,13 +38,14 @@
       <button class="sidebarMini__button">
         <i class="fa fa-cog"></i>
       </button>
+
       <div class="sidebarMini__content">
         <h2>Dark Mode</h2>
         <!-- d-flex === display flex class of bootstrap -->
         <div class="d-flex">
           <span>OFF</span>
           <label class="switch" for="checkbox">
-            <input type="checkbox" name="" id="checkbox" />
+            <input type="checkbox" id="checkbox" />
             <div class="slider"></div>
           </label>
           <span>ON</span>
@@ -61,6 +61,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
+
         <div class="col-lg-9 col-xl-7 col-md-8 col-sm-8 col-8 myNavBar__col">
           <div class="myNavBar__left">
             <a class="navbar-brand" href="#">
@@ -79,7 +80,7 @@
                   placeholder="search for courses"
                 />
                 <div class="input-group-append">
-                  <span class="input-group-text" id="basic-addon2"
+                  <span class="input-group-text" id="basic-addon1"
                     ><i class="fa fa-search"></i
                   ></span>
                 </div>
@@ -87,6 +88,7 @@
             </form>
           </div>
         </div>
+
         <div class="col-lg-3 col-xl-5 col-md-4 col-sm-2 col-2 myNavBar--reset">
           <div class="myNavBar__right">
             <ul class="navbar-nav mr-auto">
@@ -265,12 +267,8 @@
                 </li>
               </ul>
               <div class="tab-content" id="myTabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="dev"
-                  role="tabpanel"
-                  aria-labelledby="home-tab"
-                >
+                <div class="tab-pane fade show active" id="dev" role="tabpanel">
+                  <!-- aria-labelledby="home-tab" -->
                   <!-- html phần owl-carousel  -->
                   <div class="owl-carousel owl-theme courses__carousel">
                     <!-- class card của bootstrap  -->
@@ -450,52 +448,28 @@
                     </div>
                   </div>
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="design"
-                  role="tabpanel"
-                  aria-labelledby="profile-tab"
-                >
+                <div class="tab-pane fade" id="design" role="tabpanel">
+                  <!-- aria-labelledby="profile-tab" -->
                   Deign
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="business"
-                  role="tabpanel"
-                  aria-labelledby="contact-tab"
-                >
+                <div class="tab-pane fade" id="business" role="tabpanel">
+                  <!-- aria-labelledby="contact-tab" -->
                   Business
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="it"
-                  role="tabpanel"
-                  aria-labelledby="profile-tab"
-                >
+                <div class="tab-pane fade" id="it" role="tabpanel">
+                  <!-- aria-labelledby="profile-tab" -->
                   IT
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="personal"
-                  role="tabpanel"
-                  aria-labelledby="profile-tab"
-                >
+                <div class="tab-pane fade" id="personal" role="tabpanel">
+                  <!-- aria-labelledby="profile-tab" -->
                   Personal
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="maketing"
-                  role="tabpanel"
-                  aria-labelledby="profile-tab"
-                >
+                <div class="tab-pane fade" id="maketing" role="tabpanel">
+                  <!-- aria-labelledby="profile-tab" -->
                   Maketing
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="photography"
-                  role="tabpanel"
-                  aria-labelledby="profile-tab"
-                >
+                <div class="tab-pane fade" id="photography" role="tabpanel">
+                  <!-- aria-labelledby="profile-tab" -->
                   Photography
                 </div>
               </div>
@@ -1100,11 +1074,9 @@
     </footer>
 
     <!-- JAVASCRIPT  -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="./js/jquery.min.js"></script>
+
     <!-- POPPER  -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -1113,11 +1085,8 @@
     ></script>
 
     <!-- BS4  -->
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="./bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
 
     <!-- Owl js -->
     <script src="./js/owl.carousel.min.js"></script>
