@@ -1,0 +1,24 @@
+.categories__content {
+  width: 90%;
+  margin: auto;
+  margin-top: $mg-4;
+  h2 {
+    @include styleText($color-black-0, $fs-5, $fw-0);
+  }
+  .categories__item {
+    border: 1px solid $color-black-1;
+    padding: $pd-1;
+    margin: $mg-3 0;
+    // box-shadow: ;
+    &:hover {
+      box-shadow: 0 0 1px 1px $color-black-1, 0 3px 1px $color-black-1;
+      cursor: pointer;
+    }
+    i {
+      @include styleText($color-black-0, $fw-3, $fs-0 + 1);
+    }
+    span {
+      @include styleText($color-black-0, $fs-0, $fw-0);
+    }
+  }
+}

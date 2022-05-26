@@ -1,0 +1,33 @@
+.banner {
+  display: flex;
+  align-items: center;
+  // background: color url() position/ bg-size bg-rêpat;
+  padding: 10px 0;
+  // background: url("../../img/logo.svg") 0/90% no-repeat,
+  //   linear-gradient(61deg, $color-purple, $color-blue-1 41%);
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(red, 0.8),
+    rgba(yellow, 0.8)
+  );
+
+  background-blend-mode: overlay;
+  height: 325px;
+  text-align: center;
+  h2 {
+    @include styleText($color-white-0, $fs-4, $fw-0);
+  }
+  p {
+    @include styleText($color-white-0, $fs-0, $fw-0);
+    margin-bottom: 0;
+  }
+  button {
+    margin: $mg-3 0;
+  }
+  .banner__content {
+    img {
+      width: 150px;
+    }
+  }
+}

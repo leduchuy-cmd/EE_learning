@@ -1,0 +1,42 @@
+// #ec5252
+.intro {
+  // 1. hướng trải màu
+  // 2. màu bắt đầu
+  // 3. màu kết thúc
+  background: linear-gradient(-45deg, $color-red-0, $color-purple);
+  padding: $pd-3;
+  .intro__content {
+    width: 82%;
+    margin: 0 auto;
+    .intro__icon {
+      font-size: $fs-6;
+      color: $color-white-0;
+    }
+    .intro__detail {
+      p {
+        margin-bottom: 0;
+        &:first-child {
+          @include styleText($color-white-0, $fs-3 -1, $fw-2);
+        }
+        &:last-child {
+          @include styleText($color-white-0, $fs-0, $fw-0);
+        }
+      }
+    }
+    .intro__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+  @include responsive("extra-lager") {
+    .intro__content {
+      .intro__icon {
+        display: none;
+      }
+    }
+  }
+  @include responsive("medium") {
+    display: none;
+  }
+}

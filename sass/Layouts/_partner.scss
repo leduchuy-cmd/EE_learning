@@ -1,0 +1,41 @@
+.partner {
+  background-color: $color-gray-5;
+  padding: $pd-3 0;
+  .partner__content {
+    width: 70%;
+    margin: auto;
+    .partner__text {
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .partner__img {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @include responsive("extra-lager") {
+    .partner__content {
+      width: 85%;
+      margin: auto;
+    }
+  }
+  @include responsive("lager") {
+    .partner__content {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  @include responsive("medium") {
+    .partner__content {
+      width: 60%;
+      .partner__img {
+        flex-wrap: wrap;
+        .partner__items {
+          width: 50%;
+          text-align: center;
+          margin-bottom: $mg-3;
+        }
+      }
+    }
+  }
+}

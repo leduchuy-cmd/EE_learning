@@ -1,0 +1,77 @@
+.sidebarMini {
+  // đi theo website khi trượt xuống
+  position: fixed;
+  top: 25%;
+  right: 0;
+  width: 400px;
+  background-color: $color-gray-4;
+  z-index: 500;
+  transform: translateX(100%);
+  transition: 0.5s;
+  border-left: 1px solid $color-gray-4;
+  .sidebarMini__button {
+    @include styleButton(
+      $color-black-0,
+      $color-gray-4,
+      $color-gray-4,
+      $fs-5,
+      $fw-0,
+      $pd-2,
+      $pd-3
+    );
+    border-radius: 8px 0 0 8px;
+    position: fixed;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    &:focus {
+      outline: none;
+    }
+  }
+  .sidebarMini__content {
+    text-align: center;
+    width: 150px;
+    padding: $pd-3;
+    h2 {
+      font-size: $fs-0;
+    }
+    .switch {
+      height: 25px;
+      width: 50px;
+      margin: 0 $mg-3;
+      position: relative;
+      input {
+        display: none;
+        &:checked + .slider {
+          &::before {
+            transform: translateX(15px);
+          }
+        }
+      }
+      .slider {
+        cursor: pointer;
+        background-color: $color-gray-6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: $boder-radius-1;
+        &::before {
+          transition: 0.5s;
+          content: "";
+          width: 18px;
+          height: 18px;
+          background-color: $color-white-0;
+          border-radius: 50%;
+          display: block;
+          position: absolute;
+          bottom: 4px;
+          left: 4px;
+        }
+      }
+    }
+  }
+  &.isOpen {
+    transform: translateX(60%);
+  }
+}
